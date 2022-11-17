@@ -1,0 +1,27 @@
+.signup{
+    width: 40%;
+   background-color: cadetblue;
+   border-radius: 10px;
+    margin: auto;
+    height: 30rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+}
+
+
+.text{
+    text-align: center;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+@media screen and (max-width:950px){
+    
+    .signup{
+        width:90%;
+        height: 27rem;
+    }
+    
+}
