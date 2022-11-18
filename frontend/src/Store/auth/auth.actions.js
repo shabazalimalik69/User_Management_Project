@@ -14,7 +14,7 @@ export const signupAPI = (userData) => async (dispatch) => {
     dispatch({ type: AUTH_SIGNUP_LOADING });
     try {
       let response = await axios.post(
-        "http://localhost:8000/signup",
+        "https://user-management-9nnd.onrender.com/signup",
         userData
       );
       dispatch({ type: AUTH_SIGNUP_SUCCESS, payload: response.data });
@@ -25,12 +25,12 @@ export const signupAPI = (userData) => async (dispatch) => {
     }
   };
 
-  //https://user-details.onrender.com
+  //https://user-management-9nnd.onrender.com
 export const signinAPI = (userData) => async (dispatch) => {
   dispatch({ type: AUTH_SIGNIN_LOADING });
   try {
     let response = await axios.post(
-      "http://localhost:8000/login",
+      "https://user-management-9nnd.onrender.com/login",
       userData
     );
     dispatch({ type: AUTH_SIGNIN_SUCCESS, payload: response.data });

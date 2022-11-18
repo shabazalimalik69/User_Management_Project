@@ -37,7 +37,7 @@ const Signup = () => {
     e.preventDefault();
     dispatch(signupAPI(userData));
     setUserData(" ");
-    window.location.reload(true);
+    //window.location.reload(true);
   };
 
   let isInvalid = name === "" || email === "" || password === "";

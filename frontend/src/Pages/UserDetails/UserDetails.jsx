@@ -90,7 +90,7 @@ import { addUser, deleteAllUsers, deleteUser, getUser, updateUser } from "../../
     };
     const handleUpdate = (id) => {
       dispatch(updateUser(id, userData1));
-      window.location.reload(true);
+      //window.location.reload(true);
     };
     const handleAllDelete = () => {
       dispatch(deleteAllUsers());
