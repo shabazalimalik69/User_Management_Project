@@ -12,6 +12,9 @@ app.use(express.json());
 
 app.use('/', userRouter);
 
+app.get("/",(req,res)=>{
+    res.send("HomePage")
+});
 
 const PORT = process.env.port || 7000;
 
